@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <title>AOP Observer</title>
+		<link rel="stylesheet" href="Observer.css" type="text/css" />
+	</head>
+	<body>
+    <div class="container">
+    <div class="menu_indicator">
+        <span class="menu_dot"></span>
+        <span class="menu_dot"></span>
+        <span class="menu_dot"></span>
+    </div>
+    <div class="menu">
+        <span class="first_button_set">
+            <button class="left_scroll_button"></button>
+            <button class="menu_button menu_button_1">1</button>
+            <button class="menu_button menu_button_2">2</button>
+            <button class="menu_button menu_button_3">3</button>
+            <button class="menu_button menu_button_4">4</button>
+            <button class="right_scroll_button"></button>
+        </span>
+        <span class="second_button_set">
+            <button class="left_scroll_button"></button>
+            <button class="menu_button menu_button_5">5</button>
+            <button class="menu_button menu_button_6">6</button>
+            <button class="menu_button menu_button_7">7</button>
+            <button class="menu_button menu_button_8">8</button>
+            <button class="right_scroll_button"></button>
+        </span>
+        <span class="third_button_set">
+            <button class="menu_button menu_button_mark">Mark</button>
+            <button class="menu_button menu_button_send">Send</button>
+            <button class="menu_button menu_button_small_edit">Edit</button>
+            <button class="menu_button menu_button_8">8</button>
+        </span>
+    </div>
+
+    <span class="col left">
+        <div class="elem paused">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem running">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem editing">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem completed">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem running">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+    </span>
+    <span class="col right">
+        <div class="elem paused">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem running">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem completed">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem running">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+        <div class="elem editing">
+            <div class="info_element name" ></div>
+            <span class="info_element status_1" ></span>
+            <span class="info_element status_1"></span>
+            <div class="info_element name"></div>
+            <div class="info_element name"></div>
+            <span class="info_element bar"></span>
+            <div class="fully_expanded_information">
+                <div class="info_element name"></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <span class="info_element bar"></span>
+                <div class="info_element name" ></div>
+                <span class="info_element status_1" ></span>
+                <span class="info_element status_1"></span>
+                <div class="info_element chart"></div>
+                <div class="info_element chart"></div>
+                <div class="info_element expanded_bar"></div>
+            </div>
+            <div class="expand_button"></div>
+            <div class="close_button"></div>
+        </div>
+    </span>
+    </div>
+    <!--================================================================-->
+    <!--================================================================-->
+    <!--================================================================-->
+    <div class='edit_container'>
+        <div class='budget_container selection header edit-left'>
+            <div class="header_view visible">$10,000</div>
+            <div class="expanded_view invisible">
+                <div class="data_selector start">$10,000<input type="range" /></div>
+            </div>
+        </div>
+        <div class='date_container selection header edit-right'>
+            <div class="header_view visible">6/19 - 6/25</div>
+            <div class="expanded_view invisible">
+                <div class="data_selector start">Start Date: 6/19 <input type="range" /></div>
+                <div class="data_selector end">End Date: 6/25 <input type="range" /></div>
+            </div>
+        </div>
+        <div class='status_container selection expanded'>
+            <div class="header_view invisible">Running</div>
+            <div class="expanded_view visible">
+                <div class="status_option run_status selected_status">Run</div>
+                <div class="status_option pause_status">Pause</div>
+            </div>
+        </div>
+        <div class='cancel footer edit-left'>X</div>
+        <div class='accept footer edit-right'>&#10004;</div>
+    </div>
+    <!--================================================================-->
+    <!--================================================================-->
+    <!--================================================================-->
+		<script type="text/javascript" src="jquery.min.js" charset="utf-8"></script>
+		<script type="text/jsx" src="Generator.js" charset="utf-8"></script>
+	</body>
+</html>
